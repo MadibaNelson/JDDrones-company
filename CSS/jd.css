@@ -17,7 +17,7 @@ header{
   left: 0;
   width: 150px;
   opacity: 0.6;
-  animation: wind 55s linear infinite;
+  animation: wind 30s linear infinite;
 }
 .cloud1{
   position: absolute;
@@ -32,7 +32,7 @@ header{
   width: 110px;
   top: 10px;
   opacity: 0.5;
-  animation: wind 80s reverse infinite;
+  animation: wind 80s linear infinite;
 }
 
 @keyframes wind{
@@ -191,9 +191,9 @@ h2{
 .slider{
   display: flex;
   aspect-ratio: 16/9;
-  overflow-x: hidden;
+  overflow-x: scroll;
   scroll-snap-type:x mandatory;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
   box-shadow:0 1.5px 3px x -0.75px hsla(0, 0, 0, 0.25);
   border-radius: 2px;
 }
@@ -267,6 +267,4 @@ hr{
   width: 25px;
   height: 15px;
   padding-top: 3px;
-
 }
-
